@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Banner from './components/banner/banner.js';
+import PreviewCard from './components/preview_card/preview_card.js'; 
+
+const about_me_content = {
+  image_loc: '../../img/moon.jpg',
+  title: 'About Me',
+  text: "I am an Aerospace Engineering Master's Student at the University of Colorado - Boulder as well as a Systems Engineer at Palski and Associates. Click the link below to learn a little bit more about my story.",
+  orientation: 'left'
+};
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PreviewCard content={about_me_content} />
     </div>
   );
 }
