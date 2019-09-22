@@ -15,7 +15,7 @@ class PreviewCard extends React.Component {
           <h2> {this.props.content.title} </h2>
           <p> {this.props.content.text} </p>
           <div className="card_links">
-            <a href="#"> Learn More </a>
+            <button type="button" className="round_button"> Learn More </button>
           </div>
         </div>
 
