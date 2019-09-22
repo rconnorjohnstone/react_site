@@ -1,13 +1,14 @@
 import React from 'react';
 import './preview_card.css';
+import images from '../../img/import_images.js'
 
 class PreviewCard extends React.Component {
   render() {
     return (
-      <div className="preview card">
+      <div className="preview_card">
 
-        <div className="card_image">
-          <img src={require(this.props.content.image_loc)} />
+        <div className="card_image" style={this.props.content.style}>
+          <img src={images[this.props.content.image_key]} />
         </div>
 
         <div className="content">
