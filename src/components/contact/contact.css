@@ -1,0 +1,40 @@
+.contact_wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact_wrapper button {
+  margin: 0 auto;
+  display: block;
+}
+
+.name_form {
+  box-sizing: border-box;
+  width: 50%;
+  display: inline-block;
+  padding: 0 6% 0 2%;
+}
+
+.email_form {
+  box-sizing: border-box;
+  width: 50%;
+  display: inline-block;
+  padding: 0 2% 0 6%;
+}
+
+.message_form {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 2% 2rem 2%;
+}
+
+.contact {
+  background-color: hsla(0, 0%, 100%, 5%);
+  border: 1px solid hsla(0, 0%, 60%, 100%);
+  border-radius: 5px;
+  line-height: 2;
+  width: 100%;
+}
+
+.big_text {
+}
