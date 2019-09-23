@@ -30,11 +30,16 @@
 
 .contact {
   background-color: hsla(0, 0%, 100%, 5%);
+  color: white;
+  font-size: 0.75rem;
   border: 1px solid hsla(0, 0%, 60%, 100%);
   border-radius: 5px;
   line-height: 2;
   width: 100%;
+  font-family: 'Proza Libre';
+  padding: 0.25rem 0.5rem;
 }
 
 .big_text {
+  font-family: 'Proza Libre';
 }
