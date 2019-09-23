@@ -5,6 +5,7 @@ import Banner from './components/banner/banner.js';
 import PreviewCard from './components/preview_card/preview_card.js'; 
 import Projects from './components/projects/projects.js';
 import Contact from './components/contact/contact.js';
+import Footer from './components/footer/footer.js';
 
 import about_me_content from './content/about_me/about_me.js';
 import recent_post_content from './content/recent_post/recent_post.js';
@@ -25,6 +26,8 @@ function App() {
       <Projects />
 
       <Contact />
+
+      <Footer />
 
     </div>
   );
