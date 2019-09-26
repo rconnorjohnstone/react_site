@@ -11,26 +11,49 @@ import about_me_content from './content/about_me/about_me.js';
 import recent_post_content from './content/recent_post/recent_post.js';
 import resources_content from './content/resources/resources.js';
 
+class HomePage extends React.Component {
+  render() {
+    return (
+      <div className="App">
+
+        <Banner />
+
+        <PreviewCard content={about_me_content} />
+
+        <PreviewCard content={recent_post_content} />
+
+        <PreviewCard content={resources_content} />
+
+        <Projects />
+
+        <Contact />
+
+        <Footer />
+
+      </div>
+    );
+  }
+}
+
+class NotFound extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1> Page Not Found </h1>
+        <p> Sorry... </p>
+      </div>
+    );
+  }
+}
+
+let current_page = "home";
+
 function App() {
-  return (
-    <div className="App">
-
-      <Banner />
-
-      <PreviewCard content={about_me_content} />
-
-      <PreviewCard content={recent_post_content} />
-
-      <PreviewCard content={resources_content} />
-
-      <Projects />
-
-      <Contact />
-
-      <Footer />
-
-    </div>
-  );
+  if (current_page === "home") {
+    return <HomePage />;
+  } else {
+    return <NotFound />;
+  }
 }
 
 export default App;
