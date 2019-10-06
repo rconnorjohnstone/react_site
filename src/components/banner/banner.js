@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './banner.css'
 
@@ -12,10 +13,10 @@ class Banner extends React.Component {
           <h1> Richard Connor Johnstone </h1>
           <p> Aerospace Engineer, Software Developer, Private Pilot </p>
           <div className="banner_links">
-            <button type="button" className="round_button"> About Me </button>
-            <button type="button" className="round_button"> Resources </button>
-            <button type="button" className="round_button"> Blog </button>
-            <button type="button" className="round_button"> Projects </button>
+            <NavLink type="button" className="round_button" to="/about"> About Me </NavLink>
+            <NavLink type="button" className="round_button" to="/resources"> Resources </NavLink>
+            <NavLink type="button" className="round_button" to="/"> Blog </NavLink>
+            <NavLink type="button" className="round_button" to="/projects"> Projects </NavLink>
           </div>
         </div>
         <div className="main_image">
