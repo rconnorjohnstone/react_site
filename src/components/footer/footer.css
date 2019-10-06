@@ -1,6 +1,7 @@
 .footer_wrapper {
   width: 24rem;
   margin: 2rem auto;
+  text-align: center;
 }
 
 .footer_wrapper .fa {

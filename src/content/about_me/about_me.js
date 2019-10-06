@@ -4,7 +4,8 @@ const about_me_content = {
   style: {
     order: 0
   },
-  image_key: "about me"
+  image_key: "about me",
+  spot: "/about"
 };
 
 export default about_me_content;

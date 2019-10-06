@@ -4,7 +4,8 @@ const resources_content = {
   style: {
     order: 0
   },
-  image_key: "resources"
+  image_key: "resources",
+  spot: "/resources"
 };
 
 export default resources_content;

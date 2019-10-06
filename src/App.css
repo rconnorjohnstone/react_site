@@ -1,5 +1,6 @@
 html {
-  font-size: 1.5vw;
+  font-size: 1.25vw;
+  color: white;
   background-color: #111111;
 }
 
@@ -8,21 +9,19 @@ h1, h2, h3 {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0 0 0 0;
   font-weight: normal;
-  text-align: center;
 }
 
 h1 {
-  font-size: 2.875rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 h4, h5, h6, p, a {
   color: white;
   font-family: 'Raleway', sans-serif;
-  text-align: center;
 }
 
 a {
@@ -31,6 +30,7 @@ a {
 
 .round_button {
   box-sizing: border-box;
+  display: block;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -40,7 +40,7 @@ a {
   padding: 0.5em;
   min-width: 15em;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   align-self: baseline;
   margin: auto;

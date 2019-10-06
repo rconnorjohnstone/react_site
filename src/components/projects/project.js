@@ -6,10 +6,14 @@ class Project extends React.Component {
     return (
       <div className="project">
         <div className="project_image">
-          <img src={images[this.props.content.image_key]} />
+          <a href={this.props.content.url}>
+            <img src={images[this.props.content.image_key]} />
+          </a>
         </div>
         <div className="project_title">
-          <p>{this.props.content.title}</p>
+          <a href={this.props.content.url}>
+            <p>{this.props.content.title}</p>
+          </a>
         </div>
       </div>
     );

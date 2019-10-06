@@ -4,7 +4,8 @@ const recent_post_content = {
   style: {
     order: 2
   },
-  image_key: "recent post"
+  image_key: "recent post",
+  spot: "/recent_post"
 };
 
 export default recent_post_content;

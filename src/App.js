@@ -1,59 +1,28 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
-import Banner from './components/banner/banner.js';
-import PreviewCard from './components/preview_card/preview_card.js'; 
-import Projects from './components/projects/projects.js';
-import Contact from './components/contact/contact.js';
+import Home from './components/home/home.js';
 import Footer from './components/footer/footer.js';
+import About from './components/about/about.js';
+import Resources from './components/resources/resources.js';
 
-import about_me_content from './content/about_me/about_me.js';
-import recent_post_content from './content/recent_post/recent_post.js';
-import resources_content from './content/resources/resources.js';
-
-class HomePage extends React.Component {
-  render() {
-    return (
+function App() {
+  return (
+    <BrowserRouter>
       <div className="App">
 
-        <Banner />
+        <Route exact={true} path="/" component={Home} />
 
-        <PreviewCard content={about_me_content} />
+        <Route path="/about" component={About} />
 
-        <PreviewCard content={recent_post_content} />
-
-        <PreviewCard content={resources_content} />
-
-        <Projects />
-
-        <Contact />
-
+        <Route path="/resources" component={Resources} />
+    
         <Footer />
 
       </div>
-    );
-  }
-}
-
-class NotFound extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <h1> Page Not Found </h1>
-        <p> Sorry... </p>
-      </div>
-    );
-  }
-}
-
-let current_page = "home";
-
-function App() {
-  if (current_page === "home") {
-    return <HomePage />;
-  } else {
-    return <NotFound />;
-  }
+    </BrowserRouter>
+  );
 }
 
 export default App;
