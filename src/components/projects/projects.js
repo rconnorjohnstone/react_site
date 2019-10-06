@@ -9,7 +9,7 @@ import wms_content from '../../content/projects/wms.js';
 class Projects extends React.Component {
   render() {
     return (
-      <div className="projects_wrapper">
+      <div className="projects_wrapper" id="projects">
 
         <div className="projects_header">
           <h2> Software Projects </h2>

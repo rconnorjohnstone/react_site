@@ -16,7 +16,7 @@ class Banner extends React.Component {
             <NavLink type="button" className="round_button" to="/about"> About Me </NavLink>
             <NavLink type="button" className="round_button" to="/resources"> Resources </NavLink>
             <NavLink type="button" className="round_button" to="/"> Blog </NavLink>
-            <NavLink type="button" className="round_button" to="/projects"> Projects </NavLink>
+            <a type="button" className="round_button" href="#projects"> Projects </a>
           </div>
         </div>
         <div className="main_image">
