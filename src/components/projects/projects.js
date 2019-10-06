@@ -14,6 +14,7 @@ class Projects extends React.Component {
         <div className="projects_header">
           <h2> Software Projects </h2>
           <p> The links below outline a few of my recent projects </p>
+          <p> More can be found on my <u><a href="https:/www.github.com/rconnorjohnstone">GitHub</a></u> </p>
         </div>
 
         <div className="projects_grid">

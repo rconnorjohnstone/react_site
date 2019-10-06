@@ -52,3 +52,9 @@
   font-family: sans-serif;
   vertical-align: middle;
 }
+
+@media only screen and (orientation: portrait) {
+  .project {
+    width: 95%;
+  }
+}

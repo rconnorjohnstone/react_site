@@ -5,21 +5,47 @@ import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
 class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isOpen: false};
+  }
+
+  toggleMenu() {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
+
   render() {
     return (
       <div>
         <div className="navBar">
           <div className="navLinks">
-            <NavLink exact className="navBarLink" activeClassName="activeNav" to="/">
+            <div exact className="navBarLink mobile_menu" activeClassName="activeNav">
+              <button onClick={() => this.toggleMenu()}><i className="fa fa-bars"></i></button>
+              {this.state.isOpen && <div className="open_menu">
+                <NavLink exact className="navBarLink mobileNav" activeClassName="activeNav" to="/">
+                  Home
+                </NavLink>
+                <NavLink className="navBarLink mobileNav" activeClassName="activeNav" to="/about">
+                  About
+                </NavLink>
+                <NavLink className="navBarLink mobileNav" activeClassName="activeNav" to="/resources">
+                  Resources
+                </NavLink>
+                <NavLink className="navBarLink mobileNav" activeClassName="activeNav" to="/contact">
+                  Contact
+                </NavLink>
+              </div>}
+            </div>
+            <NavLink exact className="navBarLink regularNav" activeClassName="activeNav" to="/">
               Home
             </NavLink>
-            <NavLink className="navBarLink" activeClassName="activeNav" to="/about">
+            <NavLink className="navBarLink regularNav" activeClassName="activeNav" to="/about">
               About
             </NavLink>
-            <NavLink className="navBarLink" activeClassName="activeNav" to="/resources">
+            <NavLink className="navBarLink regularNav" activeClassName="activeNav" to="/resources">
               Resources
             </NavLink>
-            <NavLink className="navBarLink" activeClassName="activeNav" to="/contact">
+            <NavLink className="navBarLink regularNav" activeClassName="activeNav" to="/contact">
               Contact
             </NavLink>
           </div>

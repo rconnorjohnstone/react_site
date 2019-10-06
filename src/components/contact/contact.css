@@ -44,3 +44,9 @@
 .big_text {
   font-family: 'Proza Libre';
 }
+
+@media only screen and (orientation: portrait) {
+  .contact_wrapper {
+    width: 75%;
+  }
+}
