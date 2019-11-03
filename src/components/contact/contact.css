@@ -1,5 +1,5 @@
 .contact_wrapper {
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
   text-align: center;
 }
@@ -32,7 +32,7 @@
 .contact {
   background-color: hsla(0, 0%, 100%, 5%);
   color: white;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   border: 1px solid hsla(0, 0%, 60%, 100%);
   border-radius: 5px;
   line-height: 2;
@@ -47,6 +47,22 @@
 
 @media only screen and (orientation: portrait) {
   .contact_wrapper {
-    width: 75%;
+    width: 85%;
+  }
+
+  .name_form {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .email_form {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .message_form {
+    padding: 0 0 2rem 0;
   }
 }
